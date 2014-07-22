@@ -56,6 +56,12 @@ router.put('/vuelos/:numero?/llego', function(req, res) {
 
 });
 
+/* Ruteamos el list  */
+router.get('/list', function(req, res) {
+  res.render('list', { title: 'Todos los Vuelos', vuelos: vuelos });
+
+});
+
 
 
 module.exports = router;

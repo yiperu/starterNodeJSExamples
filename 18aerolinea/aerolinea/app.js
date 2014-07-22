@@ -33,6 +33,7 @@ app.use('/', routes);
 //----
 app.get('/vuelos/:numero?', routes);
 app.put('/vuelos/:numero?/llego', routes);
+app.get('/list', routes);
 //----
 app.use('/users', users);
 
