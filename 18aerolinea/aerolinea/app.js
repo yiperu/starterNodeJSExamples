@@ -23,8 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 //----
-app.use('/vuelos1', routes);
-app.use('/vuelos2', routes);
+app.use('/vuelos/:numero?', routes);
+
 //----
 app.use('/users', users);
 
