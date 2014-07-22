@@ -1,0 +1,11 @@
+{
+  "name": "Vuelos",
+  "version": "0.0.1",
+  "description": "Sistema de rastreo de vuelos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henry AT (yiperu@gmail.com)",
+  "license": "ISC"
+}
