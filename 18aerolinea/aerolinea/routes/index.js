@@ -44,6 +44,18 @@ router.get('/vuelos/:numero?', function(req, res) {
 
 });
 
+/* Ruteamos la actualizacion del Vuelo  */
+router.put('/vuelos/:numero?/llego', function(req, res) {
+  var numero = req.param('numero');
+  if (typeof vuelos[numero] == "undefined") {
+  	res.status(404).json({status:'error'});
+  }else{
+  	vuelos[numero].triggerLlegada();
+  	res.json(vuelos[numero].getInformation());
+  }
+
+});
+
 
 
 module.exports = router;
